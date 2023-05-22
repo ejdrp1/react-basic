@@ -1,5 +1,6 @@
 import './App.css';
-import Sayhello from './SayHello';
+import SayHello from './SayHello';
+import SubmitEvent from './component/chap01_event/SubmitEvent';
 
 // JSX : 닫는 태그 필수 ( < /> )
 // <input type='text' />
@@ -15,25 +16,24 @@ import Sayhello from './SayHello';
 // <> : 이름없는 태그 / 불필요한 태그 사용안해도됨
 
 
-import SayHello from './SayHello';
-
-
 function App() {
-
+  
   const looping = () => {
     const helloList = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i=0; i<5; i++) {
       helloList.push(<SayHello />);
     }
     return helloList;
   };
-
-  // jsx문법에서는 스크립트를 코드를 직접 사용 불가능
-  // {} 안에서 함수호출문이나 변수참조를 할 수 있음.
+  
+  // jsx문법에서는 스크립트 코드를 직접 사용이 불가능함
+  // {} 안에서 함수호출이나 변수참조를 할 수 있음
   return (
+    
     <>
-      { looping() }
+      <SubmitEvent />
     </>
+
   );
 }
 

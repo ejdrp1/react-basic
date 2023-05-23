@@ -1,7 +1,5 @@
 import './App.css';
-import SayHello from './SayHello';
-import SubmitEvent from './component/chap01_event/SubmitEvent';
-import FoodList from './component/chap02_props/FoodList';
+import Counter from './component/chap03_state/Counter';
 
 // JSX : 닫는 태그 필수 ( < /> )
 // <input type='text' />
@@ -32,7 +30,7 @@ function App() {
   return (
     
     <>
-      <FoodList />
+      <Counter />
     </>
 
   );

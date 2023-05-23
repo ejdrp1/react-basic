@@ -1,6 +1,7 @@
 import './App.css';
 import SayHello from './SayHello';
 import SubmitEvent from './component/chap01_event/SubmitEvent';
+import FoodList from './component/chap02_props/FoodList';
 
 // JSX : 닫는 태그 필수 ( < /> )
 // <input type='text' />
@@ -18,20 +19,20 @@ import SubmitEvent from './component/chap01_event/SubmitEvent';
 
 function App() {
   
-  const looping = () => {
-    const helloList = [];
-    for (let i=0; i<5; i++) {
-      helloList.push(<SayHello />);
-    }
-    return helloList;
-  };
+  // const looping = () => {
+  //   const helloList = [];
+  //     for (let i=0; i<5; i++) {
+  //       helloList.push(<SayHello />);
+  //     }
+  //   return helloList;
+  // };
   
   // jsx문법에서는 스크립트 코드를 직접 사용이 불가능함
   // {} 안에서 함수호출이나 변수참조를 할 수 있음
   return (
     
     <>
-      <SubmitEvent />
+      <FoodList />
     </>
 
   );
